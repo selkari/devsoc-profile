@@ -1,5 +1,5 @@
 body {
-  font: 100%;
+  font-size: 200%;
   color: #29183A;
   background-color: #FFEDF2;
 }
@@ -7,12 +7,12 @@ body {
 .bubble-container {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 100%;
+  width: 100%;
+  background-color: #CFF8FF;
 }
 
 .bubble-sidebar {
   display: flex;
-  background-color: yellow;
   flex-basis: 20%;
   align-items: center;
   justify-content: center;
@@ -21,23 +21,21 @@ body {
 .bubble-main {
   display: flex;
   flex-wrap: wrap;
-  background-color: blue;
   flex-basis: 80%;
 }
 .bubble-main header {
   display: flex;
   flex-basis: 100%;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: red;
 }
 .bubble-main #content {
-  background-color: green;
   flex-basis: 100%;
 }
 .bubble-main nav {
-  background-color: aqua;
+  display: flex;
+  flex-basis: 300px;
+  justify-content: flex-start;
+  gap: 0 5%;
 }
 
 /*# sourceMappingURL=main-style.css.map */

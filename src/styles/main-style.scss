@@ -1,7 +1,7 @@
 @use 'colours';
 
 body {
-    font: 100%;
+    font-size: 200%;
     color: colours.$main-text-lite;
     background-color: colours.$secondary-bg-lite;
 }
@@ -9,36 +9,41 @@ body {
 .bubble-container {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 100%;
+    width: 100%;
+    background-color: colours.$primary-bg-lite;
 }
+
+// TODO: remove background-color placeholders
 
 // used for the header image and to take up space on the left
 .bubble-sidebar {
+    // background-color: yellow;
     display: flex;
-    background-color: yellow;
     flex-basis: 20%;
     align-items: center;
     justify-content: center;
 }
 
 .bubble-main {
+    // background-color: blue;
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
     flex-basis: 80%;
     header {
+        // background-color: red;
         display: flex;
         flex-basis: 100%;
         flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: red;
     }
     #content {
-        background-color: green;
+        // background-color: green;
         flex-basis: 100%;
     }
     nav {
-        background-color: aqua;
+        // background-color: aqua;
+        display: flex;
+        flex-basis: 300px;
+        justify-content: flex-start;
+        gap: 0 5%;
     }
 }
