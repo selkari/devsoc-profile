@@ -1,0 +1,43 @@
+body {
+  font: 100%;
+  color: #29183A;
+  background-color: #FFEDF2;
+}
+
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.bubble-sidebar {
+  display: flex;
+  background-color: yellow;
+  flex-basis: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble-main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  flex-basis: 80%;
+}
+.bubble-main header {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: red;
+}
+.bubble-main #content {
+  background-color: green;
+  flex-basis: 100%;
+}
+.bubble-main nav {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=main-style.css.map */

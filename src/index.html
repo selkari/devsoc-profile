@@ -6,24 +6,39 @@
         <title>welcome home!</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/heart.svg">
+        <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/moon-star.svg">
+        <link rel="stylesheet" type="text/css" href="styles/main-style.css?v100">
+        <!-- <style>
+            body {
+                background-color: blue;
+            }
+        </style> -->
     </head>
     <!-- this will be in the bubble -->
     <body>
-        <header>
-            <h1>about me?</h1>
-        </header>
-        <p>I'm rain! (he/him)</p>
-        <p>I'm a second year at UNSW, currently doing a degree in software engineering.</p>
-        <p>Here are my links:</p>
-
-        <!-- TODO: replace with images -->
-        <nav>
-            <a href="https://github.com/selkari" target="_blank"><img src="/assets/images/icons/github.svg" width="50px" height="50px"></a>
-            <!-- not working yet, can't be bothered to make the hover rn -->
-            <img src="/assets/images/icons/discord.svg" width="50px" height="50px">
-            <a href="mailto:rain.tolentino.uni@gmail.com"><img src="/assets/images/icons/email.svg" width="50px" height="50px"></a>
-        </nav>
+        <div class="bubble-container">
+            <div class="bubble-sidebar">
+                <img src="https://unpkg.com/pixelarticons@1.8.0/svg/heart.svg" width="80%" height="80%">
+            </div>
+            <div class="bubble-main">
+                <header>
+                    <h1>about me?</h1>
+                </header>
+                <div class="space"></div>
+                <div id="content">
+                    <p>Hi, my name is Rain! (he/him)</p>
+                    <p>I'm a second year at UNSW, currently doing a degree in software engineering.</p>
+                    <p>Here are my links:</p>
+                </div>
+                <div class="space"></div>
+                <nav>
+                    <a href="https://github.com/selkari" target="_blank"><img src="/assets/images/icons/github.svg" width="50px" height="50px"></a>
+                    <!-- not working yet, can't be bothered to make the hover rn -->
+                    <img src="/assets/images/icons/discord.svg" width="50px" height="50px">
+                    <a href="mailto:rain.tolentino.uni@gmail.com"><img src="/assets/images/icons/email.svg" width="50px" height="50px"></a>
+            </nav>
+        </div>
+            </div>
     </body>
 
     <!-- TODO: replace placeholder text with imgs -->

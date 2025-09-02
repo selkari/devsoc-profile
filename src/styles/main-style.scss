@@ -1,0 +1,44 @@
+@use 'colours';
+
+body {
+    font: 100%;
+    color: colours.$main-text-lite;
+    background-color: colours.$secondary-bg-lite;
+}
+
+.bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+// used for the header image and to take up space on the left
+.bubble-sidebar {
+    display: flex;
+    background-color: yellow;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble-main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    flex-basis: 80%;
+    header {
+        display: flex;
+        flex-basis: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: red;
+    }
+    #content {
+        background-color: green;
+        flex-basis: 100%;
+    }
+    nav {
+        background-color: aqua;
+    }
+}
