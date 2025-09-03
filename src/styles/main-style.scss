@@ -1,7 +1,7 @@
 @use 'colours';
 
 body {
-    font-size: 5vh;
+    font-size: 4vh;
     height: 100vh;
     width: 100vw;
     color: colours.$main-text-lite;
@@ -10,29 +10,25 @@ body {
 
 nav {
     display: flex;
-    background-color: aqua;
     min-width: 100%;
 }
 
 .bubble-container {
+    background-color: colours.$primary-bg-lite;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 
 .box-row {
-    background-color: aqua;
     display: flex;
     flex-direction: row;
 }
 
-// TODO: remove background-color placeholders
-
 // used for the header image and to take up space on the left
 .bubble-sidebar {
-    background-color: yellow;
     display: flex;
     flex-basis: 20%;
     align-items: center;
@@ -40,22 +36,18 @@ nav {
 }
 
 .bubble-main {
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
     header {
-        background-color: red;
         display: flex;
         flex-basis: 100%;
         flex-wrap: nowrap;
     }
     #content {
-        background-color: green;
         flex-basis: 100%;
     }
     #bubble-links {
-        background-color: blueviolet; //colours.$primary-bg-lite;
         display: flex;
         justify-content: flex-start;
         justify-items: center;
