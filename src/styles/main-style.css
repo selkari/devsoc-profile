@@ -9,14 +9,17 @@ body {
   font-size: 3.5vh;
   font-family: "Courier New", Courier, monospace;
   color: #29183A;
-  background-color: #FFEDF2;
+  background-color: #ffd8ea;
 }
 
-nav {
+footer {
+  padding: 0 0 3vh 0;
   display: flex;
   justify-content: space-around;
   align-content: flex-end;
+  height: 14%;
   min-width: 100%;
+  align-items: flex-end;
 }
 
 .bubble-container {
@@ -70,7 +73,7 @@ nav {
 
 #bubble-closure {
   width: 100%;
-  height: 10%;
+  height: 18%;
 }
 
 .icon-links {

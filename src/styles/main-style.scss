@@ -14,11 +14,15 @@ body {
     background-color: colours.$secondary-bg-lite;
 }
 
-nav {
+footer {
+    $bottom-padding: 3;
+    padding: 0 0 $bottom-padding * 1vh 0;
     display: flex;
     justify-content: space-around;
     align-content: flex-end;
+    height: (17 - $bottom-padding) * 1%;
     min-width: 100%;
+    align-items: flex-end;
 }
 
 .bubble-container {
@@ -73,7 +77,7 @@ nav {
 
 #bubble-closure {
     width: 100%;
-    height: 10%;
+    height: 18%;
 }
 
 .icon-links {
