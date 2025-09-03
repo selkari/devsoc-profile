@@ -8,7 +8,7 @@ body, html {
 }
 
 body {
-  font-size: 3.5vh;
+  font-size: max(3.5vh, 17px);
   font-family: "Tiny5", sans-serif;
   color: #29183A;
   background-color: #ffd8ea;
