@@ -73,17 +73,15 @@ footer {
 
 #bubble-closure {
   width: 100%;
-  height: 18%;
+  background-color: #ffd8ea;
 }
 
 .icon-links {
   width: 7vw;
-  height: 7vh;
+  height: auto;
 }
 
-.pixel-icon {
-  width: 7vw;
-  height: auto;
+.pixel {
   image-rendering: pixelated;
 }
 
