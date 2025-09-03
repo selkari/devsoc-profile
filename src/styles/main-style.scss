@@ -1,4 +1,6 @@
 @use 'colours';
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap');
 
 body, html {
     padding: 0;
@@ -9,7 +11,8 @@ body, html {
 
 body {
     font-size: 3.5vh;
-    font-family: 'Courier New', Courier, monospace;
+    // i don't know which one i like more!
+    font-family: "Tiny5", sans-serif;
     color: colours.$main-text-lite;
     background-color: colours.$secondary-bg-lite;
 }
@@ -76,8 +79,11 @@ footer {
 }
 
 #bubble-closure {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: colours.$secondary-bg-lite;
+    align-items: center;
 }
 
 .icon-links {
