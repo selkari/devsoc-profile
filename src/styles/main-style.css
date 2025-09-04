@@ -11,6 +11,10 @@ body, html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
   font-size: max(3.5vh, 17px);
   font-family: "Tiny5", sans-serif;
   color: #29183A;
@@ -19,11 +23,11 @@ body {
 
 footer {
   display: flex;
+  flex-basis: 1 1 100%;
   justify-content: space-around;
   align-content: flex-end;
-  height: auto;
   align-items: flex-end;
-  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .bubble-container {
@@ -53,6 +57,7 @@ footer {
 .bubble-sidebar img {
   flex-basis: 1 1 50%;
   height: 10vh;
+  min-height: 50px;
   width: 10vw;
   gap: 10% 10%;
 }
