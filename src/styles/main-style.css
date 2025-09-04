@@ -125,4 +125,10 @@ footer {
   image-rendering: pixelated;
 }
 
+#theme-toggle {
+  border: none;
+  padding: 0 0 0 0;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=main-style.css.map */
