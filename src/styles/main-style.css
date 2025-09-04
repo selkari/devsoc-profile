@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap");
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  min-width: 330px;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  font-size: max(3.5vh, 17px);
+  font-family: "Tiny5", sans-serif;
+  color: #292A68;
+  background-color: #ffd8ea;
+}
+
+footer {
+  display: flex;
+  flex-basis: 1 1 100%;
+  justify-content: space-around;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-self: flex-end;
+}
+
+.bubble-container {
+  background-color: #CFF8FF;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  height: 63%;
+  box-sizing: border-box;
+  border-left: 0.8vw solid #6988BF;
+  box-shadow: inset 0.8vw 0 0 0 #88B8EA;
+  border-right: 0.8vw solid #88B8EA;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.bubble-sidebar {
+  display: flex;
+  flex-basis: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.bubble-sidebar img {
+  flex-basis: 1 1 50%;
+  height: 10vh;
+  min-height: 50px;
+  width: 10vw;
+  gap: 10% 10%;
+}
+
+.bubble-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+.bubble-main header {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+}
+.bubble-main #content {
+  flex-basis: 100%;
+}
+.bubble-main #bubble-links {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  width: auto;
+  height: auto;
+  gap: 10%;
+}
+
+#bubble-closure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #ffd8ea;
+  align-items: center;
+}
+#bubble-closure #tail {
+  flex-basis: 1 0;
+  justify-self: flex-end;
+  padding-left: 10%;
+}
+
+.icon-links {
+  width: 7vw;
+  height: auto;
+}
+
+.pixel {
+  image-rendering: pixelated;
+}
+
+/*# sourceMappingURL=main-style.css.map */
