@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/moon-star.svg">
         <link rel="stylesheet" type="text/css" href="styles/main-style.css?v100">
+        <script rel="script" type="text/javascript" src="dark_mode.js" defer></script>
     </head>
     <body>
         <div class="bubble-container">
@@ -35,12 +36,12 @@
             </div>
         </div>
         <div id="bubble-closure">
-            <img class="pixel" src="/assets/images/bubble_close.png" width="100%" height="auto"/>
+            <img id="bubble-close-img" class="pixel" src="/assets/images/bubble_close.png" width="100%" height="auto"/>
             <img id="tail" class="pixel" src="/assets/images/bubble_tail.png" width="5%"/>
         </div>
         <footer>
             <!-- TODO: add links to other pages here -->
-            <button id="theme-toggle"><img class="icon-links pixel" src="/assets/images/icons/lamp_icon_lite.png" alt="toggle dark mode"/></button>
+            <button id="theme-toggle"><img id="lamp-button" class="icon-links pixel" src="/assets/images/icons/lamp_icon_lite.png" alt="toggle dark mode"/></button>
             <a href=""><img class="icon-links pixel" src="/assets/images/icons/yarn_icon.png" alt="my projects"/></a>
             <a href=""><img class="icon-links pixel" src="/assets/images/icons/mewo_icon.png" alt="home page"/></a>
             <a href=""><img class="icon-links pixel" src="/assets/images/icons/game_icon.png" alt="my hobbies"/></a>
