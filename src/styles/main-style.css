@@ -9,6 +9,15 @@
   --bubble-shade2: #6988BF;
 }
 
+.dark-mode {
+  --primary-bg: #694D75;
+  --secondary-bg: #4c4166;
+  --accent: red;
+  --main-text: #ffbafc;
+  --bubble-shade1: #573970;
+  --bubble-shade2: #352b50;
+}
+
 body, html {
   padding: 0;
   margin: 0;

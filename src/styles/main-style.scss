@@ -11,6 +11,15 @@
     --bubble-shade2: #{colours.$bubble-shade2-lite};
 }
 
+.dark-mode {
+    --primary-bg: #{colours.$primary-bg-dark};
+    --secondary-bg: #{colours.$secondary-bg-dark};
+    --accent: #{colours.$accent-dark};
+    --main-text: #{colours.$main-text-dark};
+    --bubble-shade1: #{colours.$bubble-shade1-dark};
+    --bubble-shade2: #{colours.$bubble-shade2-dark};
+}
+
 body, html {
     padding: 0;
     margin: 0;
