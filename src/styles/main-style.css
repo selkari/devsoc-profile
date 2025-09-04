@@ -81,23 +81,8 @@ footer {
   min-height: 50px;
   width: 10vw;
   gap: 10% 10%;
-  animation-name: bouncing-sidebar;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
 }
 
-@keyframes bouncing-sidebar {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -1vh);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .bubble-main {
   display: flex;
   flex-wrap: wrap;
@@ -133,6 +118,10 @@ footer {
   flex-basis: 1 0;
   justify-self: flex-end;
   padding-left: 10%;
+  animation-name: bubble-bounce;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .icon-links {
@@ -148,6 +137,39 @@ footer {
   border: none;
   padding: 0 0 0 0;
   background-color: transparent;
+}
+
+.bounce-anim {
+  animation-name: bouncy;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bouncy {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -1vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes bubble-bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -0.8vh);
+  }
+  70% {
+    transform: translate(0, -0.8vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 /*# sourceMappingURL=main-style.css.map */
