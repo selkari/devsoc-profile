@@ -27,6 +27,9 @@ body, html {
   max-height: 100vh;
   max-width: 100vw;
 }
+body svg, html svg {
+  fill: var(--main-text);
+}
 
 body {
   display: flex;
@@ -72,7 +75,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.bubble-sidebar img {
+.bubble-sidebar svg {
   flex-basis: 1 1 50%;
   height: 10vh;
   min-height: 50px;
@@ -96,7 +99,8 @@ footer {
 .bubble-main #bubble-links {
   display: flex;
   justify-content: space-between;
-  justify-items: center;
+  justify-items: flex-start;
+  align-items: flex-start;
   width: auto;
   height: auto;
   gap: 10%;
