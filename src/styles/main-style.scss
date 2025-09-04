@@ -89,7 +89,17 @@ $bubble-border: 0.8vw;
         min-height: 50px;
         width: 10vw;
         gap: 10% 10%;
+        animation-name: bouncing-sidebar;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
     }
+}
+
+@keyframes bouncing-sidebar {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(0, -1vh);}
+    100% {transform: translate(0, 0);}
 }
 
 .bubble-main {
