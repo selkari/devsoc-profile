@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Tiny5&display=swap");
+:root {
+  --primary-bg: #CFF8FF;
+  --secondary-bg: #ffd8ea;
+  --accent: #CFD1EC;
+  --main-text: #292A68;
+  --bubble-shade1: #88B8EA;
+  --bubble-shade2: #6988BF;
+}
+
 body, html {
   padding: 0;
   margin: 0;
@@ -17,8 +26,8 @@ body {
   align-content: center;
   font-size: max(3.5vh, 17px);
   font-family: "Tiny5", sans-serif;
-  color: #292A68;
-  background-color: #ffd8ea;
+  color: var(--main-text);
+  background-color: var(--secondary-bg);
 }
 
 footer {
@@ -31,16 +40,16 @@ footer {
 }
 
 .bubble-container {
-  background-color: #CFF8FF;
+  background-color: var(--primary-bg);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   width: 100%;
   height: 63%;
   box-sizing: border-box;
-  border-left: 0.8vw solid #6988BF;
-  box-shadow: inset 0.8vw 0 0 0 #88B8EA;
-  border-right: 0.8vw solid #88B8EA;
+  border-left: 0.8vw solid var(--bubble-shade2);
+  box-shadow: inset 0.8vw 0 0 0 var(--bubble-shade1);
+  border-right: 0.8vw solid var(--bubble-shade1);
 }
 
 .box-row {
@@ -89,7 +98,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #ffd8ea;
+  background-color: var(--secondary-bg);
   align-items: center;
 }
 #bubble-closure #tail {
