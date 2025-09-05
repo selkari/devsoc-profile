@@ -8,6 +8,7 @@
     --main-text: #{colours.$main-text-lite};
     --bubble-shade1: #{colours.$bubble-shade1-lite};
     --bubble-shade2: #{colours.$bubble-shade2-lite};
+    --icon-highlight: #{colours.$icon-highlight-lite};
     --drop-shadow: #{colours.$drop-shadow-lite};
 }
 
@@ -17,6 +18,7 @@
     --main-text: #{colours.$main-text-dark};
     --bubble-shade1: #{colours.$bubble-shade1-dark};
     --bubble-shade2: #{colours.$bubble-shade2-dark};
+    --icon-highlight: #{colours.$icon-highlight-dark};
     --drop-shadow: #{colours.$drop-shadow-dark};
 }
 
@@ -53,7 +55,7 @@ footer {
     align-items: flex-end;
     justify-self: flex-end;
     img {
-        filter: drop-shadow(0 0.3vw var(--drop-shadow));
+        filter: drop-shadow(0 0.3vw var(--icon-highlight));
     }
     img:hover {
         animation-name: hover-select;
