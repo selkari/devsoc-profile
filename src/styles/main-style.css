@@ -108,6 +108,15 @@ footer img:hover {
 .bubble-main #content {
   flex-basis: 100%;
 }
+.bubble-main .right-hand-content {
+  box-sizing: border-box;
+  padding-right: 15%;
+}
+.bubble-main .left-hand-content {
+  box-sizing: border-box;
+  padding-left: 8%;
+  padding-right: 12%;
+}
 .bubble-main #bubble-links {
   display: flex;
   justify-content: space-between;

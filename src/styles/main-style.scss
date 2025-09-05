@@ -116,6 +116,15 @@ $bubble-border: 0.8vw;
     #content {
         flex-basis: 100%;
     }
+    .right-hand-content {
+        box-sizing: border-box;
+        padding-right: 15%;
+    }
+    .left-hand-content {
+        box-sizing: border-box;
+        padding-left: 8%;
+        padding-right: 12%;
+    }
     #bubble-links {
         display: flex;
         justify-content: space-between;
