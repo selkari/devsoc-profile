@@ -5,19 +5,19 @@
 :root {
     --primary-bg: #{colours.$primary-bg-lite};
     --secondary-bg: #{colours.$secondary-bg-lite};
-    --accent: #{colours.$accent-lite};
     --main-text: #{colours.$main-text-lite};
     --bubble-shade1: #{colours.$bubble-shade1-lite};
     --bubble-shade2: #{colours.$bubble-shade2-lite};
+    --drop-shadow: #{colours.$drop-shadow-lite};
 }
 
 .dark-mode {
     --primary-bg: #{colours.$primary-bg-dark};
     --secondary-bg: #{colours.$secondary-bg-dark};
-    --accent: #{colours.$accent-dark};
     --main-text: #{colours.$main-text-dark};
     --bubble-shade1: #{colours.$bubble-shade1-dark};
     --bubble-shade2: #{colours.$bubble-shade2-dark};
+    --drop-shadow: #{colours.$drop-shadow-dark};
 }
 
 body, html {
@@ -39,7 +39,7 @@ body {
     justify-content: flex-start;
     align-content: center;
     font-size: max(3.5vh, 17px);
-    // i don't know which one i like more!
+    // TODO: decide on a font
     font-family: "Tiny5", sans-serif;
     color: var(--main-text);
     background-color: var(--secondary-bg);
@@ -50,10 +50,20 @@ footer {
     flex-basis: 1 1 100%;
     justify-content: space-around;
     align-content: flex-end;
-    // height: auto;
     align-items: flex-end;
     justify-self: flex-end;
+    img {
+        filter: drop-shadow(0 0.3vw var(--drop-shadow));
+    }
+    img:hover {
+        animation-name: hover-select;
+        animation-timing-function: ease-out;
+        animation-duration: 0.01s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
+
 // ========================================================================== //
 // dream bubble styling
 // ========================================================================== //
@@ -112,6 +122,13 @@ $bubble-border: 0.8vw;
         width: auto;
         height: auto;
         gap: 10%;
+        a:hover {
+            animation-name: hover-select;
+            animation-timing-function: ease-out;
+            animation-duration: 0.01s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
@@ -174,4 +191,9 @@ $bubble-border: 0.8vw;
     30% {transform: translate(0, -0.8vh);}
     70% {transform: translate(0, -0.8vh);}
     100% {transform: translate(0, 0);}
+}
+
+@keyframes hover-select {
+    0% {transform: translate(0,0);}
+    100% {filter: brightness(150%); transform: translate(0,-1vh);}
 }

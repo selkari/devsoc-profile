@@ -3,19 +3,19 @@
 :root {
   --primary-bg: #CFF8FF;
   --secondary-bg: #ffd8ea;
-  --accent: #CFD1EC;
   --main-text: #292A68;
   --bubble-shade1: #88B8EA;
   --bubble-shade2: #6988BF;
+  --drop-shadow: #C1B0E1;
 }
 
 .dark-mode {
   --primary-bg: #694D75;
   --secondary-bg: #4c4166;
-  --accent: red;
   --main-text: #ffbafc;
   --bubble-shade1: #573970;
   --bubble-shade2: #352b50;
+  --drop-shadow: #9783CD;
 }
 
 body, html {
@@ -49,6 +49,16 @@ footer {
   align-content: flex-end;
   align-items: flex-end;
   justify-self: flex-end;
+}
+footer img {
+  filter: drop-shadow(0 0.3vw var(--drop-shadow));
+}
+footer img:hover {
+  animation-name: hover-select;
+  animation-timing-function: ease-out;
+  animation-duration: 0.01s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .bubble-container {
@@ -104,6 +114,13 @@ footer {
   width: auto;
   height: auto;
   gap: 10%;
+}
+.bubble-main #bubble-links a:hover {
+  animation-name: hover-select;
+  animation-timing-function: ease-out;
+  animation-duration: 0.01s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 #bubble-closure {
@@ -169,6 +186,15 @@ footer {
   }
   100% {
     transform: translate(0, 0);
+  }
+}
+@keyframes hover-select {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    filter: brightness(150%);
+    transform: translate(0, -1vh);
   }
 }
 
