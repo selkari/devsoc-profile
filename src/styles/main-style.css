@@ -131,6 +131,9 @@ footer img:hover {
   background-color: var(--secondary-bg);
   align-items: center;
 }
+#bubble-closure img {
+  filter: drop-shadow(0 0.5vw var(--drop-shadow));
+}
 #bubble-closure #tail {
   flex-basis: 1 0;
   justify-self: flex-end;

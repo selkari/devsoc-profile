@@ -139,6 +139,9 @@ $bubble-border: 0.8vw;
     height: auto;
     background-color: var(--secondary-bg);
     align-items: center;
+    img {
+        filter: drop-shadow(0 0.5vw var(--drop-shadow));
+    }
     #tail {
         // offset to have it come from the cat's head :)
         flex-basis: 1 0;
