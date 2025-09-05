@@ -115,7 +115,7 @@ footer img:hover {
   height: auto;
   gap: 10%;
 }
-.bubble-main #bubble-links a:hover {
+.bubble-main #bubble-links svg:hover {
   animation-name: hover-select;
   animation-timing-function: ease-out;
   animation-duration: 0.01s;
