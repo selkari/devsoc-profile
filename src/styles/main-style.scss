@@ -5,19 +5,21 @@
 :root {
     --primary-bg: #{colours.$primary-bg-lite};
     --secondary-bg: #{colours.$secondary-bg-lite};
-    --accent: #{colours.$accent-lite};
     --main-text: #{colours.$main-text-lite};
     --bubble-shade1: #{colours.$bubble-shade1-lite};
     --bubble-shade2: #{colours.$bubble-shade2-lite};
+    --icon-highlight: #{colours.$icon-highlight-lite};
+    --drop-shadow: #{colours.$drop-shadow-lite};
 }
 
 .dark-mode {
     --primary-bg: #{colours.$primary-bg-dark};
     --secondary-bg: #{colours.$secondary-bg-dark};
-    --accent: #{colours.$accent-dark};
     --main-text: #{colours.$main-text-dark};
     --bubble-shade1: #{colours.$bubble-shade1-dark};
     --bubble-shade2: #{colours.$bubble-shade2-dark};
+    --icon-highlight: #{colours.$icon-highlight-dark};
+    --drop-shadow: #{colours.$drop-shadow-dark};
 }
 
 body, html {
@@ -39,10 +41,14 @@ body {
     justify-content: flex-start;
     align-content: center;
     font-size: max(3.5vh, 17px);
-    // i don't know which one i like more!
+    // TODO: decide on a font
     font-family: "Tiny5", sans-serif;
     color: var(--main-text);
     background-color: var(--secondary-bg);
+}
+
+p {
+    margin: 0.5em 0;
 }
 
 footer {
@@ -50,10 +56,20 @@ footer {
     flex-basis: 1 1 100%;
     justify-content: space-around;
     align-content: flex-end;
-    // height: auto;
     align-items: flex-end;
     justify-self: flex-end;
+    img {
+        filter: drop-shadow(0 0.3vw var(--icon-highlight));
+    }
+    img:hover {
+        animation-name: hover-select;
+        animation-timing-function: ease-out;
+        animation-duration: 0.01s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
 }
+
 // ========================================================================== //
 // dream bubble styling
 // ========================================================================== //
@@ -102,7 +118,19 @@ $bubble-border: 0.8vw;
         flex-wrap: nowrap;
     }
     #content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         flex-basis: 100%;
+    }
+    .right-hand-content {
+        box-sizing: border-box;
+        padding-right: 15%;
+    }
+    .left-hand-content {
+        box-sizing: border-box;
+        padding-left: 8%;
+        padding-right: 12%;
     }
     #bubble-links {
         display: flex;
@@ -112,7 +140,24 @@ $bubble-border: 0.8vw;
         width: auto;
         height: auto;
         gap: 10%;
+        a, div {
+            min-height: 30px;
+            min-width: 30px;
+        }
+        svg:hover {
+            animation-name: hover-select;
+            animation-timing-function: ease-out;
+            animation-duration: 0.01s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
     }
+}
+
+.big-image {
+    max-width: 80%;
+    border-radius: 10vh;
+    align-self: center;
 }
 
 #bubble-closure {
@@ -122,6 +167,9 @@ $bubble-border: 0.8vw;
     height: auto;
     background-color: var(--secondary-bg);
     align-items: center;
+    img {
+        filter: drop-shadow(0 0.5vw var(--drop-shadow));
+    }
     #tail {
         // offset to have it come from the cat's head :)
         flex-basis: 1 0;
@@ -145,6 +193,28 @@ $bubble-border: 0.8vw;
 
 .pixel {
     image-rendering: pixelated;
+}
+
+.tooltip {
+    position: relative;
+    .tt-text {
+        visibility: hidden;
+        background-color: var(--bubble-shade2);
+        color: var(--main-text);
+        z-index: 1;
+        text-align: center;
+        padding: 2vh 0;
+        // position text to the right of the icon
+        position: absolute;
+        min-width: 30vw;
+        left: 105%;
+    }
+}
+
+.tooltip:hover {
+    .tt-text {
+        visibility: visible;
+    }
 }
 
 #theme-toggle {
@@ -174,4 +244,9 @@ $bubble-border: 0.8vw;
     30% {transform: translate(0, -0.8vh);}
     70% {transform: translate(0, -0.8vh);}
     100% {transform: translate(0, 0);}
+}
+
+@keyframes hover-select {
+    0% {transform: translate(0,0);}
+    100% {filter: brightness(150%); transform: translate(0,-1vh);}
 }
