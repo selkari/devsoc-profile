@@ -44,6 +44,10 @@ body {
   background-color: var(--secondary-bg);
 }
 
+p {
+  margin: 0.5em 0;
+}
+
 footer {
   display: flex;
   flex-basis: 1 1 100%;
@@ -106,6 +110,9 @@ footer img:hover {
   flex-wrap: nowrap;
 }
 .bubble-main #content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   flex-basis: 100%;
 }
 .bubble-main .right-hand-content {
@@ -132,6 +139,18 @@ footer img:hover {
   animation-duration: 0.01s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+#tote-img {
+  max-width: 80%;
+  border-radius: 10vh;
+  align-self: center;
+}
+
+#plush-img {
+  max-width: 80%;
+  border-radius: 10vh;
+  align-self: center;
 }
 
 #bubble-closure {

@@ -47,6 +47,10 @@ body {
     background-color: var(--secondary-bg);
 }
 
+p {
+    margin: 0.5em 0;
+}
+
 footer {
     display: flex;
     flex-basis: 1 1 100%;
@@ -114,6 +118,9 @@ $bubble-border: 0.8vw;
         flex-wrap: nowrap;
     }
     #content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         flex-basis: 100%;
     }
     .right-hand-content {
@@ -141,6 +148,18 @@ $bubble-border: 0.8vw;
             animation-fill-mode: forwards;
         }
     }
+}
+
+#tote-img {
+    max-width: 80%;
+    border-radius: 10vh;
+    align-self: center;
+}
+
+#plush-img {
+    max-width: 80%;
+    border-radius: 10vh;
+    align-self: center;
 }
 
 #bubble-closure {
