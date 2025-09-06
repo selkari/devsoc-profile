@@ -133,6 +133,10 @@ footer img:hover {
   height: auto;
   gap: 10%;
 }
+.bubble-main #bubble-links a, .bubble-main #bubble-links div {
+  min-height: 30px;
+  min-width: 30px;
+}
 .bubble-main #bubble-links svg:hover {
   animation-name: hover-select;
   animation-timing-function: ease-out;
@@ -175,6 +179,25 @@ footer img:hover {
 
 .pixel {
   image-rendering: pixelated;
+}
+
+.tooltip {
+  position: relative;
+}
+.tooltip .tt-text {
+  visibility: hidden;
+  background-color: var(--bubble-shade2);
+  color: var(--main-text);
+  z-index: 1;
+  text-align: center;
+  padding: 2vh 0;
+  position: absolute;
+  min-width: 30vw;
+  left: 105%;
+}
+
+.tooltip:hover .tt-text {
+  visibility: visible;
 }
 
 #theme-toggle {

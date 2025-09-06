@@ -140,6 +140,10 @@ $bubble-border: 0.8vw;
         width: auto;
         height: auto;
         gap: 10%;
+        a, div {
+            min-height: 30px;
+            min-width: 30px;
+        }
         svg:hover {
             animation-name: hover-select;
             animation-timing-function: ease-out;
@@ -189,6 +193,28 @@ $bubble-border: 0.8vw;
 
 .pixel {
     image-rendering: pixelated;
+}
+
+.tooltip {
+    position: relative;
+    .tt-text {
+        visibility: hidden;
+        background-color: var(--bubble-shade2);
+        color: var(--main-text);
+        z-index: 1;
+        text-align: center;
+        padding: 2vh 0;
+        // position text to the right of the icon
+        position: absolute;
+        min-width: 30vw;
+        left: 105%;
+    }
+}
+
+.tooltip:hover {
+    .tt-text {
+        visibility: visible;
+    }
 }
 
 #theme-toggle {
