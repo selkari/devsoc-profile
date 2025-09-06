@@ -141,13 +141,7 @@ footer img:hover {
   animation-fill-mode: forwards;
 }
 
-#tote-img {
-  max-width: 80%;
-  border-radius: 10vh;
-  align-self: center;
-}
-
-#plush-img {
+.big-image {
   max-width: 80%;
   border-radius: 10vh;
   align-self: center;
