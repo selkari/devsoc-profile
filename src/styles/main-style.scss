@@ -226,11 +226,12 @@ $bubble-border: 0.8vw;
 #slideshow {
     max-width: 80%;
     align-self: center;
-}
-
-.slideshow-img {
-    width: 100%;
-    max-width: 100%;
+    .slideshow-img {
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
 }
 
 #theme-toggle {

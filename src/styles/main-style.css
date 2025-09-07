@@ -210,10 +210,9 @@ footer img:hover {
   max-width: 80%;
   align-self: center;
 }
-
-.slideshow-img {
+#slideshow .slideshow-img img {
   width: 100%;
-  max-width: 100%;
+  display: block;
 }
 
 #theme-toggle {
