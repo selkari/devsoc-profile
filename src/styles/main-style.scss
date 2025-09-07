@@ -132,6 +132,12 @@ $bubble-border: 0.8vw;
         padding-left: 8%;
         padding-right: 12%;
     }
+    .centered-content {
+        box-sizing: border-box;
+        max-width: 100vw;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
     #bubble-links {
         display: flex;
         justify-content: space-between;
@@ -215,6 +221,16 @@ $bubble-border: 0.8vw;
     .tt-text {
         visibility: visible;
     }
+}
+
+#slideshow {
+    max-width: 80%;
+    align-self: center;
+}
+
+.slideshow-img {
+    width: 100%;
+    max-width: 100%;
 }
 
 #theme-toggle {
