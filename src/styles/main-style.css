@@ -210,8 +210,9 @@ footer img:hover {
   width: 100%;
   max-width: 100%;
   align-self: center;
-  background-color: var(--bubble-shade2);
   overflow: clip;
+  z-index: 1;
+  border-radius: 10vh;
 }
 #slideshow .slideshow-img {
   width: 100%;
@@ -231,6 +232,11 @@ footer img:hover {
   animation-timing-function: ease-in-out;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 @keyframes bouncy {
@@ -265,6 +271,14 @@ footer img:hover {
   100% {
     filter: brightness(150%);
     transform: translate(0, -1vh);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 

@@ -1,5 +1,5 @@
 let currSlide = 0;
-const buttonNext = document.getElementById('next-button');
+const buttonNext = document.getElementById('slideshow');
 displayImg();
 
 buttonNext.addEventListener('click', () => {
