@@ -126,7 +126,6 @@ footer img:hover {
 }
 .bubble-main .centered-content {
   box-sizing: border-box;
-  max-width: 100vw;
   padding-left: 12%;
   padding-right: 12%;
 }
@@ -207,12 +206,18 @@ footer img:hover {
 }
 
 #slideshow {
-  max-width: 80%;
-  align-self: center;
-}
-#slideshow .slideshow-img img {
+  height: 55vh;
   width: 100%;
-  display: block;
+  max-width: 100%;
+  align-self: center;
+  background-color: var(--bubble-shade2);
+  overflow: clip;
+}
+#slideshow .slideshow-img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 #theme-toggle {
