@@ -34,6 +34,7 @@ nextButton.addEventListener('click', () => {
   nowPlaying = (nowPlaying + 1) % playlist.length;
   updateCurrentSong();
   audio.play();
+  disc.style.animationPlayState = 'running';
   playState = 'play';
 });
 
