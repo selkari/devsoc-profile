@@ -113,9 +113,10 @@ $bubble-border: 0.8vw;
 // used for the header image and to take up space
 .bubble-sidebar {
     display: flex;
+    flex-direction: column;
     flex-basis: 20%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     svg {
         flex-basis: 1 1 50%;
         height: 10vh;
