@@ -331,10 +331,9 @@ $bubble-border: 0.8vw;
 
 .spin-anim {
     animation-name: spin;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-fill-mode: both;
 }
 
 @keyframes bouncy {

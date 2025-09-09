@@ -42,6 +42,7 @@ prevButton.addEventListener('click', () => {
   nowPlaying = (nowPlaying + playlist.length - 1) % playlist.length;
   updateCurrentSong();
   audio.play();
+  disc.style.animationPlayState = 'running';
   playState = 'play';
 });
 
@@ -51,4 +52,6 @@ function updateCurrentSong() {
   audio.setAttribute('src', playlist[nowPlaying].source);
 }
 
+// on opening this page,
 updateCurrentSong();
+disc.style.animationPlayState = 'paused';
