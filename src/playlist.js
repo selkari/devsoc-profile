@@ -3,13 +3,28 @@ const playlist = [
   {
     artist: 'Mustard Service',
     title: 'Getting There',
-    source: 'assets/sounds/getting_there.mp3'
+    source: 'https://files.catbox.moe/sz1iod.mp3'
   },
   {
     artist: 'Radiohead',
     title: 'Jigsaw Falling Into Place',
-    source: 'assets/sounds/jigsaw_fallin.mp3'
-  }
+    source: 'https://files.catbox.moe/g0dpcs.mp3'
+  },
+  {
+    artist: 'Will Wood',
+    title: '...well, better than the alternative',
+    source: 'https://files.catbox.moe/l0iuju.mp3'
+  },
+  {
+    artist: 'Glass Beach',
+    title: 'The CIA',
+    source: 'https://files.catbox.moe/gfgd00.mp3'
+  },
+  {
+    artist: 'Will Wood and the Tapeworms',
+    title: 'Skeleton Appreciation Day in Vestal, NY (Bones)',
+    source: 'https://files.catbox.moe/inu7gl.mp3'
+  },
 ];
 
 const nextButton = document.getElementById('next-song');
