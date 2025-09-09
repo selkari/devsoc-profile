@@ -304,7 +304,7 @@ footer img:hover {
   animation-iteration-count: infinite;
 }
 
-.fade {
+.fade-anim {
   animation-name: fade;
   animation-duration: 1s;
 }
