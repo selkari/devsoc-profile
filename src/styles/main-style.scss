@@ -86,6 +86,7 @@ $bubble-border: 0.8vw;
     border-left: $bubble-border solid var(--bubble-shade2);
     box-shadow: inset $bubble-border 0 0 0 var(--bubble-shade1);
     border-right: $bubble-border solid var(--bubble-shade1);
+    scrollbar-color: var(--main-text) var(--primary-bg);
 }
 
 .box-row {

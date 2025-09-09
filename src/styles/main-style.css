@@ -78,6 +78,7 @@ footer img:hover {
   border-left: 0.8vw solid var(--bubble-shade2);
   box-shadow: inset 0.8vw 0 0 0 var(--bubble-shade1);
   border-right: 0.8vw solid var(--bubble-shade1);
+  scrollbar-color: var(--main-text) var(--primary-bg);
 }
 
 .box-row {
