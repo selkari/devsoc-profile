@@ -9,8 +9,13 @@
         <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/moon-star.svg">
         <link rel="stylesheet" type="text/css" href="styles/main-style.css?v100">
         <script rel="script" type="text/javascript" src="dark_mode.js" defer></script>
+        <script rel="script" type="text/javascript" src="playlist.js" defer></script>
     </head>
     <body>
+        <!-- <audio width="300px" type="audio/wav" src="assets/sounds/getting_there.mp3" autoplay="true"></audio> -->
+        <audio id="music">
+            <source src="assets/sounds/getting_there.mp3" type="audio/mp3"/>
+        </audio>
         <!-- main content body -->
         <div class="bubble-container">
             <!-- 2-column layout -->
@@ -24,8 +29,9 @@
                         <h2 id="song-title">Song Title Here</h2>
                         <h3 id="song-artist">Song Artist Here</h3>
                         <div id="music-controls">
-                            <button><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z"/></svg></button>
-                            <button><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z"/> </svg></button>
+                            <button id="prev-song"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z"/></svg></button>
+                            <button id="play"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z"/> </svg></button>
+                            <button id="next-song"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z"/> </svg></button>
                         </div>
                     </div>
                 </div>
