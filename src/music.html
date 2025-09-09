@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- meta central -->
+        <title>welcome home!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/moon-star.svg">
+        <link rel="stylesheet" type="text/css" href="styles/main-style.css?v100">
+        <script rel="script" type="text/javascript" src="dark_mode.js" defer></script>
+    </head>
+    <body>
+        <!-- main content body -->
+        <div class="bubble-container">
+            <!-- 2-column layout -->
+            <div id="music-page-content" class="box-row">
+                <!-- column 1 is a spinning disc animation -->
+                <div id="spinning-disc">
+                    <!-- TODO: replace with spinning disc here -->
+                    <img class="pixel" src="assets/images/icons/mewo_icon.png" width="auto" height="100%">
+                </div>
+                <!-- column 2 contains song title and artist -->
+                <div class="bubble-main">
+                    <header class="right-hand-content">
+                        <h1>my playlist</h1>
+                    </header>
+                    <div id="music-details" class="right-hand-content">
+                        <h2 id="song-title">Song Title Here</h2>
+                        <h3 id="song-artist">Song Artist Here</h3>
+                        <div id="music-controls">
+                            <button>prev</button>
+                            <button>next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bubble-closure">
+            <img id="bubble-close-img" class="pixel" src="/assets/images/bubble_close.png" width="100%" height="auto"/>
+            <img id="tail" class="pixel bounce-anim" src="/assets/images/bubble_tail.png" width="5%"/>
+        </div>
+        <!-- navigation bar -->
+        <footer>
+            <button id="theme-toggle"><img id="lamp-button" class="icon-links pixel" src="/assets/images/icons/lamp_icon_lite.png" alt="toggle dark mode"/></button>
+            <a href="projects.html"><img class="icon-links pixel" src="/assets/images/icons/yarn_icon.png" alt="my projects"/></a>
+            <a href="index.html"><img class="icon-links pixel" src="/assets/images/icons/mewo_icon.png" alt="home page"/></a>
+            <a href="hobbies.html"><img class="icon-links pixel" src="/assets/images/icons/game_icon.png" alt="my hobbies"/></a>
+            <a href="music.html"><img class="icon-links pixel" src="/assets/images/icons/music_icon.png" alt="music i like"/></a>
+        </footer>
+    </body>
+</html>
