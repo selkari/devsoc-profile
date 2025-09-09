@@ -223,8 +223,8 @@ footer img:hover {
   padding-right: 8%;
 }
 #spinning-disc img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
   object-fit: contain;
 }
 
@@ -311,6 +311,14 @@ footer img:hover {
   animation-duration: 1s;
 }
 
+.spin-anim {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
 @keyframes bouncy {
   0% {
     transform: translate(0, 0);
@@ -351,6 +359,14 @@ footer img:hover {
   }
   100% {
     opacity: 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
