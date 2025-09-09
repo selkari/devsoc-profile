@@ -7,11 +7,11 @@ function switchThemeDark() {
   // add dark mode class to body and replace relevant images
   document.body.classList.add('dark-mode');
   document.getElementById('lamp-button').setAttribute(
-    'src', '/assets/images/icons/lamp_icon_dark.png');
+    'src', 'assets/images/icons/lamp_icon_dark.png');
   document.getElementById('bubble-close-img').setAttribute(
-    'src', '/assets/images/bubble_close_dark.png');
+    'src', 'assets/images/bubble_close_dark.png');
   document.getElementById('tail').setAttribute(
-    'src', '/assets/images/bubble_tail_dark.png');
+    'src', 'assets/images/bubble_tail_dark.png');
 }
 
 function switchThemeLight() {
@@ -20,11 +20,11 @@ function switchThemeLight() {
 
   document.body.classList.remove('dark-mode');
   document.getElementById('lamp-button').setAttribute(
-    'src','/assets/images/icons/lamp_icon_lite.png');
+    'src','assets/images/icons/lamp_icon_lite.png');
   document.getElementById('bubble-close-img').setAttribute(
-    'src', '/assets/images/bubble_close.png');
+    'src', 'assets/images/bubble_close.png');
   document.getElementById('tail').setAttribute(
-    'src', '/assets/images/bubble_tail.png');
+    'src', 'assets/images/bubble_tail.png');
 }
 
 // set webpage current state to what it remembers
