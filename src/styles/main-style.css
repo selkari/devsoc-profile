@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  font-size: max(3.5vh, 17px);
+  font-size: max(min(3.5vw, 3.5vh), 17px);
   font-family: "Tiny5", sans-serif;
   color: var(--main-text);
   background-color: var(--secondary-bg);
@@ -46,6 +46,10 @@ body {
 
 p {
   margin: 0.5em 0;
+}
+
+h1 {
+  font-size: max(min(8vw, 8vh), 40px);
 }
 
 h2, h3 {
@@ -181,6 +185,34 @@ footer img:hover {
   align-items: center;
   justify-self: center;
   width: 100%;
+}
+
+#music-controls {
+  display: flex;
+  box-sizing: border-box;
+  width: 60%;
+  margin: 2%;
+  justify-content: space-evenly;
+}
+#music-controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min(8vh, 8vw);
+  width: min(8vh, 8vw);
+  min-height: 30px;
+  min-width: 30px;
+  background-color: var(--primary-bg);
+  border: min(0.5vh, 0.5vw) solid var(--main-text);
+}
+#music-controls button:hover {
+  filter: brightness(130%);
+}
+#music-controls button:active {
+  filter: brightness(80%);
+}
+#music-controls svg {
+  fill: var(--main-text);
 }
 
 #spinning-disc {
