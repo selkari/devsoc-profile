@@ -231,12 +231,8 @@ $bubble-border: 0.8vw;
     justify-content: center;
     padding-right: 8%;
     img {
-        width: 70%;
-        max-width: 90%;
-        max-height: 90%;
-        object-fit: contain;
+        width: min(33vw, 33vh);
     }
-    // todo: add img animation
 }
 
 #bubble-closure {
