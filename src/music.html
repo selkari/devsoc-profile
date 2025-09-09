@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>let's jam!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://unpkg.com/pixelarticons@1.8.0/svg/music.svg">
+        <link rel="stylesheet" type="text/css" href="styles/main-style.css?v100">
+        <script rel="script" type="text/javascript" src="scripts/dark_mode.js" defer></script>
+        <script rel="script" type="text/javascript" src="scripts/pause_play.js" defer></script>
+        <script rel="script" type="text/javascript" src="scripts/playlist.js" defer></script>
+    </head>
+    <body>
+        <audio id="music" src="" type="audio/mp3" preload="audio">audio is unsupported :( sorry</audio>
+        <!-- main content body -->
+        <div class="bubble-container">
+            <!-- 2-column layout -->
+            <div id="music-page-content" class="box-row">
+                <!-- column 1 contains song title and artist -->
+                <div class="bubble-main">
+                    <header class="left-hand-content">
+                        <h1>my playlist</h1>
+                    </header>
+                    <div id="music-details" class="left-hand-content">
+                        <h2 id="song-title">Song Title Here</h2>
+                        <h3 id="song-artist">Song Artist Here</h3>
+                        <div id="music-controls">
+                            <button id="prev-song"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z"/></svg></button>
+                            <button id="play"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z"/> </svg></button>
+                            <button id="next-song"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z"/> </svg></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- column 2 is a spinning disc animation -->
+                <div id="spinning-disc">
+                    <img id="disc-sprite" class="pixel spin-anim" src="assets/images/spinning-record.png"/>
+                </div>
+            </div>
+        </div>
+        <div id="bubble-closure">
+            <img id="bubble-close-img" class="pixel" src="/assets/images/bubble_close.png" width="100%" height="auto"/>
+            <img id="tail" class="pixel bounce-anim" src="/assets/images/bubble_tail.png" width="5%"/>
+        </div>
+        <!-- navigation bar -->
+        <footer>
+            <button id="theme-toggle"><img id="lamp-button" class="icon-links pixel" src="/assets/images/icons/lamp_icon_lite.png" alt="toggle dark mode"/></button>
+            <a href="projects.html"><img class="icon-links pixel" src="/assets/images/icons/yarn_icon.png" alt="my projects"/></a>
+            <a href="index.html"><img class="icon-links pixel" src="/assets/images/icons/mewo_icon.png" alt="home page"/></a>
+            <a href="hobbies.html"><img class="icon-links pixel" src="/assets/images/icons/game_icon.png" alt="my hobbies"/></a>
+            <a href="music.html"><img class="icon-links pixel" src="/assets/images/icons/music_icon.png" alt="music i like"/></a>
+        </footer>
+    </body>
+</html>
