@@ -108,13 +108,6 @@ footer img:hover {
   align-items: center;
   justify-content: space-around;
 }
-.bubble-sidebar svg {
-  flex-basis: 1 1 50%;
-  height: 10vh;
-  min-height: 50px;
-  width: 10vw;
-  gap: 10% 10%;
-}
 
 .bubble-main {
   display: flex;
